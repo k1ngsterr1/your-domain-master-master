@@ -1,0 +1,171 @@
+
+// Colors:
+
+$main_blue: #0088CC
+$hover_button: #007EBD
+$dark_grey: #1D1D1D
+$dark_blue: #003D59
+$white: #fefefe
+
+// Phone Font Styles:
+
+$h1: clamp(13.5px,6.308411214953271vw,54px)
+$h2: clamp(12.5px,5.841121495327103vw,50px)
+$h3: clamp(12px,5.607476635514018vw,48px)
+$buttons: clamp(9px,4.205607476635514vw,36px)
+$p: clamp(8px,3.7383177570093458vw,32px)
+
+// Phone Margins style
+
+$m64: clamp(32px,16.41025641025641vw,128px)
+$m32: clamp(16px,8.205128205128204vw,64px)
+$m16: clamp(8px,4.102564102564102vw,32px)
+
+// Desktop Margins Style
+
+$deskm64: clamp(32px,3.3333333333333335vw,128px)
+$deskm32: clamp(16px,1.6666666666666667vw,64px)
+$deskm16: clamp(8px,0.8333333333333334vw,32px)
+
+// Fonts Import:
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+
+*
+    body
+
+        .footer
+            width: 100%
+            height: auto
+            background-color: $main_blue
+            display: flex
+            flex-direction: column
+
+            .separator
+                width: 100%
+                height: 2px
+                background: rgba(255, 255, 255, 0.2)
+                margin-top: $m32
+
+            .your-domain
+                width: 100%
+                height: auto
+                display: flex
+                justify-content: center
+                align-items: center
+
+                .footer-paragraph
+                    margin-top: $m32
+                    margin-bottom: $m32
+
+            .container-footer
+                width: clamp(179px,91.7948717948718vw,716px)
+                height: auto
+                margin: auto
+                margin-top: $m32
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+
+                .white-logo
+                    width: clamp(92.5px,43.22429906542056vw,370px)
+                    height: clamp(17.5px,8.177570093457945vw,70px)
+
+                .footer-navigation-desktop
+                    display: none 
+
+                .footer-navigation
+                    display: flex 
+                    flex-direction: column
+                    margin-top: $m32
+
+                    .a-link
+                        font-family: 'Source Sans Pro'
+                        font-style: normal
+                        font-weight: 600
+                        font-size: clamp(9px,4.205607476635514vw,36px)
+                        color: #FFFFFF
+
+                    .link
+                        margin-top: $m16
+                        font-family: 'Source Sans Pro'
+                        font-style: normal
+                        font-weight: 600
+                        font-size: clamp(9px,4.205607476635514vw,36px)
+                        color: #FFFFFF
+
+                .social-icons
+                    display: flex
+                    align-items: center
+
+                    .icon-link
+
+                        .icon
+                            margin-top: $m32 !important
+                            font-size: clamp(17.5px,8.177570093457945vw,70px) !important
+                            color: $white !important
+
+                        .twitter, .linkedin
+                            margin-left: $m32 !important
+
+@media screen  and (min-width: 482px)
+
+    *
+        body
+
+            .footer
+                
+
+                .separator
+
+                .your-domain
+
+                    .footer-paragraph
+                        font-size: clamp(9.5px,0.8482142857142857vw,38px)
+            .container-footer
+                width: 86.45833333333333% !important
+                height: auto !important
+                display: flex !important
+                margin: auto !important
+                justify-content: space-between !important
+                align-items: flex-start !important
+                flex-direction: row !important
+                margin-top: $deskm64 !important
+
+                .white-logo
+                    width: clamp(142.5px,14.84375vw,570px) !important
+                    height: clamp(23.5px,2.4479166666666665vw,94px) !important
+
+                .footer-navigation
+                    display: none !important
+
+                .footer-navigation-desktop
+                    display: flex !important
+                    align-items: flex-end !important
+                    justify-content: space-between !important
+                    flex-direction: column
+                    margin-top: clamp(5px,0.5208333333333334vw,20px) !important
+
+                    .a-link, .link
+                        font-size: clamp(11px,1.1458333333333333vw,44px)!important
+                        margin-top: 0px !important
+                        color: white
+                        font-family: 'Source Sans Pro'
+                        font-style: normal
+                        font-weight: 600
+
+                    .link
+                        margin-left: $deskm16
+
+                    .social-icons
+                        margin-top: $deskm32
+
+                        .icon-link
+
+                            .icon
+                                color: $white !important
+                                font-size: clamp(20px,1.7857142857142858vw,80px) !important
+                            
+                            .twitter, .telegram
+                                margin-right: $deskm32

@@ -1,0 +1,145 @@
+
+// Colors:
+
+$main_blue: #0088CC
+$hover_button: #007EBD
+$dark_grey: #1D1D1D
+$dark_blue: #003D59
+$white: #fefefe
+
+// Phone Font Styles:
+
+$h1: clamp(13.5px,6.308411214953271vw,54px)
+$h2: clamp(12.5px,5.841121495327103vw,50px)
+$h3: clamp(12px,5.607476635514018vw,48px)
+$buttons: clamp(9px,4.205607476635514vw,36px)
+$p: clamp(8px,3.7383177570093458vw,32px)
+
+// Phone Margins style
+
+$m64: clamp(32px,16.41025641025641vw,128px)
+$m32: clamp(16px,8.205128205128204vw,64px)
+$m16: clamp(8px,4.102564102564102vw,32px)
+
+// Desktop Margins Style
+$deskm64: clamp(32px,3.3333333333333335vw,128px)
+$deskm32: clamp(16px,1.6666666666666667vw,64px)
+$deskm16: clamp(8px,0.8333333333333334vw,32px)
+
+// Fonts Import:
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+
+*
+    body
+
+        .blog-page
+            width: 100%
+            height: auto
+
+            .container
+                width: clamp(179px,91.7948717948718vw,716px)
+                height: auto
+                margin: auto
+                margin-top: $m32
+                display: flex
+                flex-direction: column
+
+                .content
+                    display: flex
+                    flex-direction: column
+                    margin-top: $m32
+                    margin-bottom: $m32
+
+                    .card-row
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        margin: auto
+
+                        .card
+                            width: 91.7948717948718%
+                            height: auto
+                            border-radius: 10px
+                            background-color: #F2F2F2
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-start
+                            margin: auto
+                            margin-top: $m32
+
+                            .card-image
+                                width: 94.1340782122905%
+                                height: 47.795414462081126%
+                                margin: auto
+                                margin-top: clamp(4px,1.8691588785046729vw,16px)
+
+                            .card-heading
+                                font-family: 'Montserrat'
+                                font-style: normal
+                                font-weight: 700
+                                font-size: clamp(11px,5.314009661835748vw,44px)
+                                color: $dark_blue
+                                margin-top: clamp(8px,3.864734299516908vw,32px)
+                                margin-left: clamp(5px,2.4154589371980677vw,20px)
+
+                            .card-paragraph
+                                font-family: 'Source Sans Pro'
+                                font-style: normal
+                                font-weight: 400
+                                font-size: clamp(8px,3.864734299516908vw,32px)
+                                margin-top: clamp(5px,2.4154589371980677vw,20px)
+                                margin-left: clamp(5px,2.4154589371980677vw,20px)
+
+                            .card-link
+                                font-family: 'Source Sans Pro'
+                                font-style: normal
+                                font-weight: 600
+                                font-size: $buttons
+                                margin-top: clamp(10.5px,1.09375vw,42px)
+                                margin-left: clamp(5px,2.4154589371980677vw,20px)
+                                margin-bottom: clamp(20.5px,9.903381642512077vw,82px)
+                                color: $main_blue
+                                text-decoration: underline
+
+@media screen  and (min-width: 482px)
+
+    *
+        body
+
+            .blog-page
+                width: 100%
+                height: auto
+
+                .container
+                    width: 86.45833333333333%
+                    height: auto
+                    margin: auto
+                    margin-top: $deskm64
+                    display: flex
+                    flex-direction: column
+
+                    .content
+                        display: flex
+                        flex-direction: column
+                        margin-top: $deskm64
+
+                        .card-row
+                            width: 100%
+                            display: flex
+                            flex-direction: row
+                            // margin-bottom: $deskm64
+
+                            .card
+                                width: clamp(240.5px,25.052083333333332vw,962px)
+
+                                .card-heading
+                                    font-size: clamp(14.5px,1.5104166666666667vw,58px)
+
+                                .card-paragraph
+                                    width: clamp(205px,21.354166666666668vw,820px)
+                                    font-size: clamp(8.5px,0.8854166666666666vw,34px)
+
+                                .card-link
+                                    font-size: clamp(10.5px,1.09375vw,42px)

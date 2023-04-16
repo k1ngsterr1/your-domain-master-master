@@ -1,0 +1,141 @@
+
+// Colors:
+
+$main_blue: #0088CC
+$hover_button: #007EBD
+$dark_grey: #1D1D1D
+$dark_blue: #003D59
+$white: #fefefe
+
+// Phone Font Styles:
+
+$h1: clamp(13.5px,6.308411214953271vw,54px)
+$h2: clamp(12.5px,5.841121495327103vw,50px)
+$h3: clamp(12px,5.607476635514018vw,48px)
+$buttons: clamp(9px,4.205607476635514vw,36px)
+$p: clamp(8px,3.7383177570093458vw,32px)
+
+// Phone Margins style
+
+$m64: clamp(32px,16.41025641025641vw,128px)
+$m32: clamp(16px,8.205128205128204vw,64px)
+$m16: clamp(8px,4.102564102564102vw,32px)
+
+// Desktop Margins Style
+
+$deskm64: clamp(32px,3.3333333333333335vw,128px)
+$deskm32: clamp(16px,1.6666666666666667vw,64px)
+$deskm16: clamp(8px,0.8333333333333334vw,32px)
+
+// Fonts Import:
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+
+*
+    body
+
+        .a-page
+            width: 100%
+            height: auto
+
+            .container
+                width: clamp(179px,91.7948717948718vw,716px)
+                height: auto
+                margin: auto
+                margin-top: $m32
+                display: flex
+                flex-direction: column
+
+                .content
+                    display: flex
+                    flex-direction: column
+                    margin: auto
+                    margin-top: $m32
+
+                    .number
+                        display: none
+
+                    .a-container
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        margin-top: $m64
+
+                        .a-img
+                            width: clamp(44px,20.560747663551403vw,176px)
+                            height: clamp(44px,20.560747663551403vw,172px)
+
+                        .three-heading
+                            margin-top: $m16
+
+                        .a-paragraph
+                            width: clamp(185px,86.44859813084112vw,740px)
+                            text-align: center
+                            margin-top: $m16
+
+                .phone-image
+                    display: none
+
+@media screen  and (min-width: 482px)
+
+    *
+        body
+
+            .a-page
+                width: 100%
+                height: auto
+
+                .container
+                    width: 86.45833333333333%
+                    height: auto
+                    margin: auto
+                    display: flex
+                    align-items: center
+                    flex-direction: row
+
+                    .content
+                        display: flex
+                        align-items: center
+                        margin-top: clamp(89.5px,9.322916666666666vw,358px)
+
+                        .zero-two-c, .zero-three-c, .zero-four-c
+                            margin-top: clamp(50px,5.208333333333333vw,200px)
+
+                        .zero-one-c, .zero-two-c, .zero-three-c, .zero-four-c
+                            display: flex !important
+                            align-items: center !important
+                            margin-right: clamp(150px,15.625vw,600px)
+
+                            .number
+                                font-family: 'Montserrat'
+                                font-style: normal
+                                font-weight: 900
+                                font-size: clamp(25px,2.6041666666666665vw,100px)
+                                color: $main_blue
+                                display: flex
+                                margin-right: $deskm32
+
+                            .a-container
+                                display: flex
+                                flex-direction: column
+                                align-items: flex-start
+                                margin: 0
+
+                                .a-img
+                                    display: none
+
+                                .three-heading
+                                    font-size: clamp(17.5px,1.8229166666666667vw,70px)
+                                    text-align: left
+
+                                .a-paragraph
+                                    width: clamp(185px,86.44859813084112vw,740px)
+                                    font-size: clamp(12px,1.25vw,48px)
+                                    text-align: left
+                                    margin-top: $m16
+
+                    .phone-image
+                        width: clamp(132px,26.770833333333332vw,528px)
+                        height: clamp(447px,46.5625vw,1788px)
+                        display: flex

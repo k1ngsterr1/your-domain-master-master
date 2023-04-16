@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* body {
+  height: auto !important;
+}
+* body .domain-page {
+  width: 100%;
+  height: auto;
+}
+* body .domain-page .container {
+  width: clamp(179px, 91.7948717949vw, 716px);
+  height: auto;
+  margin: auto;
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+  display: flex;
+  flex-direction: column;
+}
+* body .domain-page .container .content {
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+}
+* body .domain-page .container .content .zones-heading {
+  color: #003D59;
+}
+* body .domain-page .container .content .zones-container-desk {
+  display: none;
+}
+* body .domain-page .container .content .zones-container-mob {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+  flex-direction: column;
+}
+* body .domain-page .container .content .zones-container-mob .next {
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+}
+* body .domain-page .container .content .zones-container-mob .last {
+  margin-bottom: clamp(16px, 8.2051282051vw, 64px);
+}
+* body .domain-page .container .content .zones-container-mob .zone-row {
+  width: 78.7179487179%;
+  display: flex;
+  justify-content: space-between;
+}
+* body .domain-page .container .content .zones-container-mob .zone-row .zone {
+  display: flex;
+  align-items: center;
+}
+* body .domain-page .container .content .zones-container-mob .zone-row .zone .zone-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(10px, 4.6728971963vw, 40px);
+}
+* body .domain-page .container .content .zones-container-mob .zone-row .zone .zone-button {
+  width: clamp(15px, 7.0093457944vw, 60px);
+  height: clamp(15px, 7.0093457944vw, 60px);
+  background-color: #0088CC;
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: clamp(24px, 11.214953271vw, 96px);
+}
+
+@media screen and (min-width: 482px) {
+  * body .domain-page {
+    width: 100%;
+    height: auto;
+  }
+  * body .domain-page .container {
+    width: 86.4583333333% !important;
+    height: auto;
+    margin: auto;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+    display: flex;
+    flex-direction: column;
+  }
+  * body .domain-page .container .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(89.5px, 9.3229166667vw, 358px);
+  }
+  * body .domain-page .container .content .zones-heading {
+    font-size: clamp(22px, 1.9642857143vw, 88px);
+    color: #003D59;
+  }
+  * body .domain-page .container .content .zones-container-mob {
+    display: none;
+  }
+  * body .domain-page .container .content .zones-container-desk {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+    flex-direction: column;
+  }
+  * body .domain-page .container .content .zones-container-desk .next {
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+  }
+  * body .domain-page .container .content .zones-container-desk .last {
+    margin-bottom: clamp(32px, 3.3333333333vw, 128px);
+  }
+  * body .domain-page .container .content .zones-container-desk .zone-row {
+    width: 74.6875%;
+    display: flex;
+    justify-content: space-between;
+  }
+  * body .domain-page .container .content .zones-container-desk .zone {
+    display: flex;
+    align-items: center;
+  }
+  * body .domain-page .container .content .zones-container-desk .zone-name {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(12px, 1.0714285714vw, 48px);
+  }
+  * body .domain-page .container .content .zones-container-desk .zone-button {
+    width: clamp(22px, 1.9642857143vw, 88px);
+    height: clamp(22px, 1.9642857143vw, 88px);
+    font-size: clamp(11px, 0.9821428571vw, 44px);
+    background-color: #0088CC;
+    color: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: clamp(24px, 11.214953271vw, 96px);
+  }
+}/*# sourceMappingURL=zones.css.map */

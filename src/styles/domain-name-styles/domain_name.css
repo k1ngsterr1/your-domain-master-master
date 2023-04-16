@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+* body .domain-name-page {
+  width: 100%;
+  height: auto;
+}
+* body .domain-name-page .container {
+  width: clamp(179px, 91.7948717949vw, 716px);
+  height: auto;
+  margin: auto;
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+  display: flex;
+  flex-direction: column;
+}
+* body .domain-name-page .container .content {
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+  margin-bottom: clamp(16px, 8.2051282051vw, 64px);
+}
+* body .domain-name-page .container .content .domain-name-heading {
+  color: #003D59;
+}
+* body .domain-name-page .container .content .domain-name-paragraph {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(8px, 4.1025641026vw, 32px);
+}
+* body .domain-name-page .container .content .one {
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+}
+* body .domain-name-page .container .content .two, * body .domain-name-page .container .content .three {
+  margin-top: clamp(8px, 4.1025641026vw, 32px);
+}
+
+@media screen and (min-width: 482px) {
+  * body .domain-name-page {
+    width: 100%;
+    height: auto;
+  }
+  * body .domain-name-page .container {
+    width: 86.4583333333% !important;
+    height: auto;
+    margin: auto;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+    margin-bottom: clamp(64px, 1.1160714286vw, 256px);
+    display: flex;
+    flex-direction: column;
+  }
+  * body .domain-name-page .container .content {
+    width: 63.59375%;
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(89.5px, 9.3229166667vw, 358px);
+  }
+  * body .domain-name-page .container .content .domain-name-heading {
+    font-size: clamp(22px, 1.9642857143vw, 88px);
+    color: #003D59;
+  }
+  * body .domain-name-page .container .content .domain-name-paragraph {
+    font-size: clamp(12.5px, 1.1160714286vw, 50px);
+  }
+}/*# sourceMappingURL=domain_name.css.map */

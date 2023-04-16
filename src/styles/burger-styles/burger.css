@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+* body .desktop-navigation {
+  display: none;
+}
+* body .desktop-navigation .desk-logo {
+  display: none;
+}
+* body .link {
+  color: #1D1D1D;
+  text-decoration: none;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(11px, 5.1401869159vw, 44px);
+  margin-top: clamp(8px, 4.1025641026vw, 32px);
+}
+* body .ru, * body .en {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background: transparent;
+}
+* body .bm-burger-button {
+  position: fixed;
+  width: clamp(16px, 7.476635514vw, 64px);
+  height: clamp(10px, 4.6728971963vw, 40px);
+  left: clamp(188px, 87.8504672897vw, 752px);
+  top: clamp(20px, 9.3457943925vw, 80px);
+}
+* body .bm-burger-bars {
+  background: #0088CC;
+  border-radius: 5px;
+}
+* body .bm-burger-bars-hover {
+  background: #007EBD;
+}
+* body .bm-cross-button {
+  left: clamp(125px, 58.4112149533vw, 500px);
+}
+* body .bm-menu-wrap {
+  position: absolute;
+  width: clamp(147.5px, 68.9252336449vw, 590px);
+  z-index: 1000;
+  height: clamp(1750.5px, 817.9906542056vw, 7002px);
+  left: clamp(65px, 30.3738317757vw, 260px);
+  top: clamp(-0.5px, -0.2336448598vw, -2px);
+  background: #fefefe;
+}
+
+@media screen and (min-width: 482px) {
+  * body .mobile-navigation {
+    display: none;
+  }
+  * body .mobile-navigation .logo {
+    display: none;
+  }
+  * body .mobile-navigation .link {
+    color: #1D1D1D;
+    text-decoration: none;
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(11px, 5.1401869159vw, 44px);
+    margin-top: clamp(8px, 4.1025641026vw, 32px);
+  }
+  * body .mobile-navigation .bm-burger-button {
+    position: fixed;
+    width: clamp(16px, 7.476635514vw, 64px);
+    height: clamp(10px, 4.6728971963vw, 40px);
+    left: clamp(188px, 87.8504672897vw, 752px);
+    top: clamp(20px, 9.3457943925vw, 80px);
+  }
+  * body .mobile-navigation .bm-burger-bars {
+    background: #0088CC;
+    border-radius: 5px;
+  }
+  * body .mobile-navigation .bm-burger-bars-hover {
+    background: #007EBD;
+  }
+  * body .mobile-navigation .bm-cross-button {
+    left: clamp(125px, 58.4112149533vw, 500px);
+  }
+  * body .mobile-navigation .bm-menu-wrap {
+    position: absolute;
+    width: clamp(147.5px, 68.9252336449vw, 590px);
+    z-index: 1000;
+    height: clamp(1750.5px, 817.9906542056vw, 7002px);
+    left: clamp(65px, 30.3738317757vw, 260px);
+    top: clamp(-0.5px, -0.2336448598vw, -2px);
+    background: #fefefe;
+  }
+  * body .desktop-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  * body .desktop-navigation .desk-logo {
+    display: flex;
+    width: clamp(142.5px, 14.84375vw, 570px);
+    height: clamp(23.5px, 2.4479166667vw, 94px);
+  }
+  * body .desktop-navigation .link {
+    font-size: clamp(11px, 1.1458333333vw, 44px);
+    margin-left: clamp(16px, 1.6666666667vw, 64px);
+  }
+  * body .desktop-navigation .domain, * body .desktop-navigation .directory, * body .desktop-navigation .blog {
+    margin-left: clamp(16px, 1.6666666667vw, 64px);
+  }
+  * body .desktop-navigation .Dropdown-control {
+    position: relative !important;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 200ms ease;
+    width: clamp(45.5px, 4.7395833333vw, 182px);
+    height: clamp(17px, 1.7708333333vw, 68px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 600;
+    color: #fefefe;
+    font-size: clamp(9px, 0.9375vw, 36px);
+    border-radius: 3px;
+    background-color: #0088CC;
+    transition: 0.3s all;
+  }
+  * body .desktop-navigation .Dropdown-control:hover {
+    background-color: #007EBD;
+  }
+  * body .desktop-navigation .Dropdown-control:hover {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  }
+  * body .desktop-navigation .Dropdown-arrow {
+    border-color: #fefefe transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    content: " ";
+    display: block;
+    margin-left: clamp(2.5px, 0.2604166667vw, 10px);
+  }
+  * body .desktop-navigation .is-open .Dropdown-arrow {
+    border-color: transparent transparent #fefefe;
+    border-width: 0 5px 5px;
+  }
+  * body .desktop-navigation .Dropdown-menu {
+    background-color: #0088CC;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: -1px;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    top: 104px;
+    width: 91px;
+    z-index: 1000;
+    -webkit-overflow-scrolling: touch;
+  }
+  * body .desktop-navigation .Dropdown-menu .Dropdown-group > .Dropdown-title {
+    padding: 8px 10px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  * body .desktop-navigation .Dropdown-option {
+    box-sizing: border-box;
+    color: rgba(51, 51, 51, 0.8);
+    cursor: pointer;
+    display: block;
+    padding: 8px 10px;
+  }
+  * body .desktop-navigation .Dropdown-option:last-child {
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  * body .desktop-navigation .Dropdown-option:hover {
+    background-color: #f2f9fc;
+    color: #333;
+  }
+  * body .desktop-navigation .Dropdown-option.is-selected {
+    background-color: #f2f9fc;
+    color: #333;
+  }
+  * body .desktop-navigation .Dropdown-noresults {
+    box-sizing: border-box;
+    color: #ccc;
+    cursor: default;
+    display: block;
+    padding: 8px 10px;
+  }
+}/*# sourceMappingURL=burger.css.map */

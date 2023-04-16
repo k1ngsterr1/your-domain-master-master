@@ -1,0 +1,139 @@
+
+// Colors:
+
+$main_blue: #0088CC
+$hover_button: #007EBD
+$dark_grey: #1D1D1D
+$dark_blue: #003D59
+$white: #fefefe
+
+// Phone Font Styles:
+
+$h1: clamp(13.5px,6.308411214953271vw,54px)
+$h2: clamp(12.5px,5.841121495327103vw,50px)
+$h3: clamp(12px,5.607476635514018vw,48px)
+$buttons: clamp(9px,4.205607476635514vw,36px)
+$p: clamp(8px,3.7383177570093458vw,32px)
+
+// Phone Margins style
+
+$m64: clamp(32px,16.41025641025641vw,128px)
+$m32: clamp(16px,8.205128205128204vw,64px)
+$m16: clamp(8px,4.102564102564102vw,32px)
+
+// Desktop Margins Style
+$deskm64: clamp(32px,3.3333333333333335vw,128px)
+$deskm32: clamp(16px,1.6666666666666667vw,64px)
+$deskm16: clamp(8px,0.8333333333333334vw,32px)
+
+// Fonts Import:
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+
+*
+    body
+
+        .inside-page
+            width: 100%
+            height: auto
+
+            .container
+                width: clamp(179px,91.7948717948718vw,716px)
+                height: auto
+                margin: auto
+                margin-top: $m32
+                display: flex
+                flex-direction: column
+
+                .content
+                    display: flex
+                    flex-direction: column
+                    margin-top: $m32
+
+                    .inside-heading
+                        color: $dark_blue
+
+                    .inside-paragraph
+                        margin-top: $m32
+
+                    .parameters-container
+                        display: flex
+                        flex-direction: column
+                        margin-bottom: $m32
+
+                        .parameters
+                            display: flex
+                            margin-top: $m64
+                            align-items: center
+
+                            .globe
+                                font-size: clamp(15px,7.009345794392523vw,60px)
+                                color: $main_blue
+
+                            .parameters-text
+                                display: flex
+                                flex-direction: column
+                                margin-left: clamp(10px,0.8928571428571429vw,40px)
+
+                                .parameters-property, .parameters-value
+                                    font-family: 'Source Sans Pro'
+                                    font-style: normal
+                                    font-weight: 600
+                                    font-size: clamp(10px,4.672897196261682vw,40px)
+                                    color: $dark_blue
+
+                                .parameters-value
+                                    margin-top: clamp(7px,3.2710280373831777vw,28px)
+
+@media screen  and (min-width: 482px)
+
+    *
+        body
+
+            .inside-page
+                width: 100%
+                height: auto
+
+                .container
+                    width: 86.45833333333333% !important
+                    height: auto
+                    margin: auto
+                    margin-top: $deskm64
+                    display: flex
+                    flex-direction: column
+
+                    .content
+                        display: flex
+                        flex-direction: column
+                        margin-top: clamp(89.5px,9.322916666666666vw,358px)
+
+                        .inside-heading
+                            font-size: clamp(22px,1.9642857142857142vw,88px)
+                            color: $dark_blue
+
+                        .inside-paragraph
+                            width: clamp(638px,56.964285714285715vw,2552px)
+                            font-size: clamp(12.5px,1.1160714285714286vw,50px)
+
+                        .parameters-container
+                            margin-bottom: clamp(64px,5.714285714285714vw,256px)
+
+                            .parameters
+                                display: flex
+
+                                .globe
+                                    font-size: clamp(16.5px,1.4732142857142858vw,66px)
+
+                                .parameters-text
+                                    width: 58.229166666666664%
+                                    display: flex
+                                    flex-direction: row
+                                    align-items: center
+                                    justify-content: space-between
+
+                                    .parameters-property, .parameters-value
+                                        font-size: clamp(12px,1.0714285714285714vw, 48px)
+                                        margin-top: 0px
+
+                                    .parametrs-value

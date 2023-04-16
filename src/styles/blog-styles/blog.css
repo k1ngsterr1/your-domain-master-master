@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+* body .blog-page {
+  width: 100%;
+  height: auto;
+}
+* body .blog-page .container {
+  width: clamp(179px, 91.7948717949vw, 716px);
+  height: auto;
+  margin: auto;
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+  display: flex;
+  flex-direction: column;
+}
+* body .blog-page .container .content {
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+  margin-bottom: clamp(16px, 8.2051282051vw, 64px);
+}
+* body .blog-page .container .content .card-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+* body .blog-page .container .content .card-row .card {
+  width: 91.7948717949%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+}
+* body .blog-page .container .content .card-row .card .card-image {
+  width: 94.1340782123%;
+  height: 47.7954144621%;
+  margin: auto;
+  margin-top: clamp(4px, 1.8691588785vw, 16px);
+}
+* body .blog-page .container .content .card-row .card .card-heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(11px, 5.3140096618vw, 44px);
+  color: #003D59;
+  margin-top: clamp(8px, 3.8647342995vw, 32px);
+  margin-left: clamp(5px, 2.4154589372vw, 20px);
+}
+* body .blog-page .container .content .card-row .card .card-paragraph {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(8px, 3.8647342995vw, 32px);
+  margin-top: clamp(5px, 2.4154589372vw, 20px);
+  margin-left: clamp(5px, 2.4154589372vw, 20px);
+}
+* body .blog-page .container .content .card-row .card .card-link {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(9px, 4.2056074766vw, 36px);
+  margin-top: clamp(10.5px, 1.09375vw, 42px);
+  margin-left: clamp(5px, 2.4154589372vw, 20px);
+  margin-bottom: clamp(20.5px, 9.9033816425vw, 82px);
+  color: #0088CC;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 482px) {
+  * body .blog-page {
+    width: 100%;
+    height: auto;
+  }
+  * body .blog-page .container {
+    width: 86.4583333333%;
+    height: auto;
+    margin: auto;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+    display: flex;
+    flex-direction: column;
+  }
+  * body .blog-page .container .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+  }
+  * body .blog-page .container .content .card-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  * body .blog-page .container .content .card-row .card {
+    width: clamp(240.5px, 25.0520833333vw, 962px);
+  }
+  * body .blog-page .container .content .card-row .card .card-heading {
+    font-size: clamp(14.5px, 1.5104166667vw, 58px);
+  }
+  * body .blog-page .container .content .card-row .card .card-paragraph {
+    width: clamp(205px, 21.3541666667vw, 820px);
+    font-size: clamp(8.5px, 0.8854166667vw, 34px);
+  }
+  * body .blog-page .container .content .card-row .card .card-link {
+    font-size: clamp(10.5px, 1.09375vw, 42px);
+  }
+}/*# sourceMappingURL=blog.css.map */

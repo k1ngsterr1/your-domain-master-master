@@ -1,0 +1,230 @@
+
+// Colors:
+
+$main_blue: #0088CC
+$hover_button: #007EBD
+$dark_grey: #1D1D1D
+$dark_blue: #003D59
+$white: #fefefe
+
+// Phone Font Styles:
+
+$h1: clamp(13.5px,6.308411214953271vw,54px)
+$h2: clamp(12.5px,5.841121495327103vw,50px)
+$h3: clamp(12px,5.607476635514018vw,48px)
+$buttons: clamp(9px,4.205607476635514vw,36px)
+$p: clamp(8px,3.7383177570093458vw,32px)
+
+// Phone Margins style
+
+$m64: clamp(32px,16.41025641025641vw,128px)
+$m32: clamp(16px,8.205128205128204vw,64px)
+$m16: clamp(8px,4.102564102564102vw,32px)
+
+// Desktop Margins Style
+
+$deskm64: clamp(32px,3.3333333333333335vw,128px)
+$deskm32: clamp(16px,1.6666666666666667vw,64px)
+$deskm16: clamp(8px,0.8333333333333334vw,32px)
+
+// Fonts Import:
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+
+*
+    body
+
+        .desktop-navigation
+            display: none
+
+            .desk-logo
+                display: none
+
+        .link
+            color: $dark_grey
+            text-decoration: none
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 600
+            font-size: clamp(11px,5.140186915887851vw,44px)
+            margin-top: $m16
+
+        .ru, .en
+            width: 100%
+            display: flex
+            align-items: flex-end
+            justify-content: flex-end
+            background: transparent
+
+        .bm-burger-button
+            position: fixed
+            width: clamp(16px,7.4766355140186915vw,64px)
+            height: clamp(10px,4.672897196261682vw,40px)
+            left: clamp(188px,87.85046728971963vw,752px)
+            top: clamp(20px,9.345794392523365vw,80px)
+
+        .bm-burger-bars
+            background: $main_blue
+            border-radius: 5px
+
+        .bm-burger-bars-hover
+            background: #007EBD
+
+        .bm-cross-button
+            left: clamp(125px,58.41121495327103vw,500px)
+
+        .bm-menu-wrap
+            position: absolute
+            width: clamp(147.5px,68.92523364485982vw,590px)
+            z-index: 1000
+            height: clamp(1750.5px,817.9906542056075vw,7002px)
+            left: clamp(65px,30.373831775700936vw,260px)
+            top: clamp(-0.5px,-0.2336448598130841vw,-2px)
+            background: $white
+
+@media screen  and (min-width: 482px)
+
+    *
+        body
+
+            .mobile-navigation
+                display: none
+
+                .logo
+                    display: none
+
+                .link
+                    color: $dark_grey
+                    text-decoration: none
+                    font-family: 'Source Sans Pro'
+                    font-style: normal
+                    font-weight: 600
+                    font-size: clamp(11px,5.140186915887851vw,44px)
+                    margin-top: $m16
+
+                .bm-burger-button
+                    position: fixed
+                    width: clamp(16px,7.4766355140186915vw,64px)
+                    height: clamp(10px,4.672897196261682vw,40px)
+                    left: clamp(188px,87.85046728971963vw,752px)
+                    top: clamp(20px,9.345794392523365vw,80px)
+
+                .bm-burger-bars
+                    background: $main_blue
+                    border-radius: 5px
+
+                .bm-burger-bars-hover
+                    background: #007EBD
+
+                .bm-cross-button
+                    left: clamp(125px,58.41121495327103vw,500px)
+
+                .bm-menu-wrap
+                    position: absolute
+                    width: clamp(147.5px,68.92523364485982vw,590px)
+                    z-index: 1000
+                    height: clamp(1750.5px,817.9906542056075vw,7002px)
+                    left: clamp(65px,30.373831775700936vw,260px)
+                    top: clamp(-0.5px,-0.2336448598130841vw,-2px)
+
+                    background: $white
+
+            .desktop-navigation
+                display: flex
+                align-items: center
+                justify-content: space-between
+
+                .desk-logo
+                    display: flex
+                    width: clamp(142.5px,14.84375vw,570px)
+                    height: clamp(23.5px,2.4479166666666665vw,94px)
+
+                .link
+                    font-size: clamp(11px,1.1458333333333333vw,44px)
+                    margin-left: $deskm32
+
+                .domain, .directory, .blog
+                    margin-left: $deskm32
+
+                .Dropdown-control
+                    position: relative !important
+                    overflow: hidden
+                    box-sizing: border-box
+                    transition: all 200ms ease
+                    width: clamp(45.5px,4.739583333333333vw,182px)
+                    height: clamp(17px,1.7708333333333333vw,68px)
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    cursor: pointer
+                    font-family: 'Source Sans Pro'
+                    font-style: normal
+                    font-weight: 600
+                    color: $white
+                    font-size: clamp(9px,0.9375vw,36px)
+                    border-radius: 3px
+                    background-color: $main_blue
+                    transition: 0.3s all
+                    &:hover
+                        background-color: #007EBD
+
+                .Dropdown-control:hover
+                    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06)
+
+                .Dropdown-arrow
+                    border-color: $white transparent transparent
+                    border-style: solid
+                    border-width: 5px 5px 0
+                    content: ' '
+                    display: block
+                    margin-left: clamp(2.5px,0.2604166666666667vw,10px)
+
+                .is-open .Dropdown-arrow
+                    border-color: transparent transparent $white
+                    border-width: 0 5px 5px
+
+                .Dropdown-menu
+                    background-color: $main_blue
+                    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1)
+                    box-sizing: border-box
+                    margin-top: -1px
+                    max-height: 200px
+                    overflow-y: auto
+                    position: absolute
+                    top: 104px
+                    width: 91px
+                    z-index: 1000
+                    -webkit-overflow-scrolling: touch
+
+                .Dropdown-menu .Dropdown-group > .Dropdown-title
+                    padding: 8px 10px
+                    color: rgba(51, 51, 51, 1)
+                    font-weight: bold
+                    text-transform: capitalize
+
+                .Dropdown-option
+                    box-sizing: border-box
+                    color: rgba(51, 51, 51, 0.8)
+                    cursor: pointer
+                    display: block
+                    padding: 8px 10px
+
+                    &:last-child
+                        border-bottom-right-radius: 2px
+                        border-bottom-left-radius: 2px
+
+                    &:hover
+                        background-color: #f2f9fc
+                        color: #333
+
+                    &.is-selected
+                        background-color: #f2f9fc
+                        color: #333
+
+                .Dropdown-noresults
+                    box-sizing: border-box
+                    color: #ccc
+                    cursor: default
+                    display: block
+                    padding: 8px 10px
