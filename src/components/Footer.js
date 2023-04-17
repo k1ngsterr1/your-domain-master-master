@@ -11,10 +11,16 @@ import { BsLinkedin } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <footer className="footer">
       <div className="container-footer">
-        <img className="white-logo" src={logo}></img>
+        <img
+          className="white-logo"
+          onClick={() => navigate("/")}
+          src={logo}
+        ></img>
         <nav className="footer-navigation">
           <a className="a-link">Бот</a>
           <Link className="link">Доменные зоны</Link>
