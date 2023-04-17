@@ -25,16 +25,23 @@
   margin-top: clamp(16px, 8.2051282051vw, 64px);
 }
 * body .page .container .content .blue-button {
+  width: clamp(123.5px, 63.3333333333vw, 494px);
+  height: clamp(23.5px, 12.0512820513vw, 94px);
   color: #fefefe;
   background-color: #0088CC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   margin-top: clamp(16px, 8.2051282051vw, 64px);
+  transition: 0.3s all;
 }
 * body .page .container .content .blue-button:hover {
   background-color: #007EBD;
 }
 * body .page .phone-image {
-  width: clamp(195px, 100vw, 780px);
-  height: clamp(360px, 184.6153846154vw, 1440px);
+  width: clamp(179px, 83.6448598131vw, 716px);
+  height: clamp(327px, 152.8037383178vw, 1308px);
   margin-left: clamp(14.5px, 7.0048309179vw, 58px);
   margin-top: clamp(37px, 17.8743961353vw, 148px);
 }
@@ -49,9 +56,10 @@
   }
   * body .page .container {
     width: 86.4583333333%;
-    height: 100vh;
+    height: auto;
     margin: auto;
     margin-top: clamp(32px, 3.3333333333vw, 128px);
+    margin-bottom: clamp(125px, 13.0208333333vw, 500px);
     display: flex;
     flex-direction: column;
   }
@@ -61,7 +69,7 @@
     margin-top: clamp(89.5px, 9.3229166667vw, 358px);
   }
   * body .page .container .content .heading {
-    width: clamp(383.5px, 39.9479166667vw, 1534px) !important;
+    width: clamp(383.5px, 39.9479166667vw, 1534px);
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 800;
@@ -76,8 +84,9 @@
     margin-top: clamp(16px, 1.6666666667vw, 64px);
   }
   * body .page .container .content .blue-button {
-    font-size: clamp(11px, 1.1458333333vw, 44px);
     width: clamp(215.5px, 22.4479166667vw, 862px);
+    height: clamp(32px, 3.3333333333vw, 128px);
+    font-size: clamp(11px, 1.1458333333vw, 44px);
     height: clamp(32px, 3.3333333333vw, 128px);
     color: #fefefe;
     background-color: #0088CC;

@@ -74,8 +74,8 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
                             text-align: center
                             margin-top: $m16
 
-                .phone-image
-                    display: none
+            .phone-image
+                display: none
 
 @media screen  and (min-width: 482px)
 
@@ -95,8 +95,9 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
                     flex-direction: row
 
                     .content
+                        width: 100%
                         display: flex
-                        align-items: center
+                        align-items: flex-start
                         margin-top: clamp(89.5px,9.322916666666666vw,358px)
 
                         .zero-two-c, .zero-three-c, .zero-four-c
@@ -130,12 +131,15 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
                                     text-align: left
 
                                 .a-paragraph
-                                    width: clamp(185px,86.44859813084112vw,740px)
+                                    width: clamp(368.5px, 38.385416666666664vw,1474px)
                                     font-size: clamp(12px,1.25vw,48px)
                                     text-align: left
                                     margin-top: $m16
 
-                    .phone-image
-                        width: clamp(132px,26.770833333333332vw,528px)
-                        height: clamp(447px,46.5625vw,1788px)
-                        display: flex
+                .phone-image
+                    width: clamp(132px,26.770833333333332vw,528px)
+                    height: clamp(447px,46.5625vw,1788px)
+                    left: clamp(649px,67.60416666666667vw,2596px)
+                    top: clamp(614.5px,64.01041666666667vw,2458px)
+                    position: absolute
+                    display: flex

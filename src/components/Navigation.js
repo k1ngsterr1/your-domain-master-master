@@ -4,7 +4,7 @@ import styles from "../styles/burger-styles/burger.css";
 
 import logo from "../assets/Logo.svg";
 import { slide as Menu } from "react-burger-menu";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Dropdown from "react-dropdown";
 // import "react-dropdown/style.css";
@@ -53,18 +53,16 @@ const options = ["RU", "EN"];
 const defaultOption = options[0];
 
 const Navigation = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="navigation">
       <nav className="mobile-navigation">
-        <img className="logo" src={logo} />
+        <img className="logo" onClick={() => navigate("/")} src={logo} />
         <Menu right styles={cross_styles}>
-          <a
-            className="link"
-            target="_blank"
-            href="https://t.me/your_domain_bot"
-          >
+          <Link className="link" to="/">
             Бот
-          </a>
+          </Link>
           <Link className="link" to="/">
             Главная
           </Link>
@@ -77,22 +75,17 @@ const Navigation = () => {
           <Link className="link" to="/blog">
             Блог
           </Link>
-          <a className="en link">RUS</a>
-          <a className="ru link">EN</a>
+          <div className="language-container">
+            <a className="en link">RU</a>
+            <a className="ru link">EN</a>
+          </div>
         </Menu>
       </nav>
       <div className="desktop-navigation">
-        <img className="desk-logo" src={logo} />
+        <img onClick={() => navigate("/")} className="desk-logo" src={logo} />
         <nav className="nav-links">
-          <a
-            className="link bot"
-            target="_blank"
-            href="https://t.me/your_domain_bot"
-          >
+          <Link className="link bot" to="/">
             Бот
-          </a>
-          <Link className="link" to="/">
-            Главная
           </Link>
           <Link className="link domain" to="/zones">
             Доменные зоны

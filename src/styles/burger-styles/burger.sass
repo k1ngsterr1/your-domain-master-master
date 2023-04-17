@@ -39,6 +39,7 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
             display: none
 
             .desk-logo
+                cursor: pointer
                 display: none
 
         .link
@@ -79,9 +80,14 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
             width: clamp(147.5px,68.92523364485982vw,590px)
             z-index: 1000
             height: clamp(1750.5px,817.9906542056075vw,7002px)
-            left: clamp(65px,30.373831775700936vw,260px)
             top: clamp(-0.5px,-0.2336448598130841vw,-2px)
             background: $white
+
+            .language-container
+                margin-top: $m64
+
+                .en, .ru
+                    color: $main_blue
 
 @media screen  and (min-width: 482px)
 
@@ -92,6 +98,7 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
                 display: none
 
                 .logo
+                    cursor: pointer
                     display: none
 
                 .link
@@ -192,8 +199,8 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
                     max-height: 200px
                     overflow-y: auto
                     position: absolute
-                    top: 104px
-                    width: 91px
+                    top: clamp(52px,5.416666666666667vw,208px)
+                    width: clamp(45.5px,4.739583333333333vw,182px)
                     z-index: 1000
                     -webkit-overflow-scrolling: touch
 

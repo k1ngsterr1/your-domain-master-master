@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation";
 import styles from "../styles/blog-styles/blog.css";
 import cardImage from "../assets/card_img.png";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 function Card(props) {
   return (
@@ -11,7 +12,9 @@ function Card(props) {
       <img className="card-image" src={cardImage}></img>
       <h4 className="card-heading">{props.heading}</h4>
       <p className="card-paragraph">{props.paragraph}</p>
-      <a className="card-link">{props.link}</a>
+      <Link className="card-link" to="/blog-inside">
+        {props.link}
+      </Link>
     </div>
   );
 }

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+* body .blog-inside-page {
+  width: 100%;
+  height: auto;
+}
+* body .blog-inside-page .container {
+  width: clamp(179px, 91.7948717949vw, 716px);
+  height: auto;
+  margin: auto;
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+  display: flex;
+  flex-direction: column;
+}
+* body .blog-inside-page .container .blog-inside-heading {
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+  color: #003D59;
+}
+* body .blog-inside-page .container .content {
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+  margin-bottom: clamp(16px, 8.2051282051vw, 64px);
+}
+* body .blog-inside-page .container .content .blog-inside-image {
+  width: 100%;
+}
+* body .blog-inside-page .container .content .blog-inside-paragraph {
+  width: clamp(162.5px, 75.9345794393vw, 650px);
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
+  font-size: clamp(10px, 4.6728971963vw, 40px);
+  margin-left: clamp(2.5px, 1.1682242991vw, 10px);
+}
+
+@media screen and (min-width: 482px) {
+  * body .blog-inside-page {
+    width: 100%;
+    height: auto;
+  }
+  * body .blog-inside-page .container {
+    width: 86.4583333333%;
+    height: auto;
+    margin: auto;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+    margin-bottom: clamp(64px, 6.6666666667vw, 256px);
+    display: flex;
+    flex-direction: column;
+  }
+  * body .blog-inside-page .container .blog-inside-heading {
+    font-size: clamp(22px, 1.9642857143vw, 88px);
+    color: #003D59;
+  }
+  * body .blog-inside-page .container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: clamp(16px, 8.2051282051vw, 64px);
+  }
+  * body .blog-inside-page .container .content .blog-inside-image {
+    width: 100%;
+    height: clamp(234px, 24.375vw, 936px);
+  }
+  * body .blog-inside-page .container .content .blog-inside-paragraph {
+    width: 73.90625%;
+    font-size: clamp(11.5px, 1.1979166667vw, 46px);
+  }
+}/*# sourceMappingURL=blog-inside.css.map */

@@ -22,7 +22,6 @@ $m32: clamp(16px,8.205128205128204vw,64px)
 $m16: clamp(8px,4.102564102564102vw,32px)
 
 // Desktop Margins Style
-
 $deskm64: clamp(32px,3.3333333333333335vw,128px)
 $deskm32: clamp(16px,1.6666666666666667vw,64px)
 $deskm16: clamp(8px,0.8333333333333334vw,32px)
@@ -35,13 +34,9 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
 *
     body
 
-        .g-page
+        .blog-inside-page
             width: 100%
             height: auto
-            margin-top: $m64
-            background-image: url(../../assets/blue-background.png)
-            background-size: 100% auto
-            background-repeat: no-repeat
 
             .container
                 width: clamp(179px,91.7948717948718vw,716px)
@@ -50,56 +45,56 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
                 margin-top: $m32
                 display: flex
                 flex-direction: column
-                align-items: center
 
-                .g-heading
-                    text-align: center
-
-                .user-button
-                    width: clamp(123.5px,57.71028037383178vw,494px)
-                    height: clamp(23.5px,10.981308411214954vw,94px)
+                .blog-inside-heading
                     margin-top: $m32
-                    display: flex
-                    align-items: center
-                    justify-content: center
-                    text-decoration: none
-                    color: $dark_grey
-                    background-color: $white
+                    color: $dark_blue
+
+                .content
+                    margin-top: $m32
                     margin-bottom: $m32
 
-@media screen  and (min-width: 482px)
+                    .blog-inside-image
+                        width: 100%
+
+                    .blog-inside-paragraph
+                        width: clamp(162.5px,75.93457943925233vw,650px)
+                        margin-top: $m32
+                        font-size: clamp(10px,4.672897196261682vw,40px)
+                        margin-left: clamp(2.5px,1.1682242990654206vw,10px)
+
+@media screen  and (min-width: 482px )
 
     *
         body
 
-            .g-page
+            .blog-inside-page
                 width: 100%
                 height: auto
-                background-image: url(../../assets/blue-background-desktop.svg)
-                background-size: 100% auto
-                background-repeat: no-repeat
 
                 .container
                     width: 86.45833333333333%
                     height: auto
                     margin: auto
                     margin-top: $deskm64
+                    margin-bottom: clamp(64px,6.666666666666667vw,256px)
                     display: flex
                     flex-direction: column
-                    align-items: center
 
-                    .g-heading
-                        font-size: clamp(20px,2.0833333333333335vw,80px)
-                        text-align: center
+                    .blog-inside-heading
+                        font-size: clamp(22px,1.9642857142857142vw,88px)
+                        color: $dark_blue
 
-                    .user-button
-                        width: clamp(234.5px,24.427083333333332vw,938px)
-                        height: $deskm64
-                        font-size: clamp(13px,1.3541666666666667vw,52px)
-                        background-color: $white
-                        transition: 0.3s all
-                        margin-top: $deskm64
-                        margin-bottom: $deskm64
-                        text-decoration: none
-                        &:hover
-                            background-color: #eaeaea
+                    .content
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        margin-top: $m32
+
+                        .blog-inside-image
+                            width: 100%
+                            height: clamp(234px,24.375vw,936px)
+
+                        .blog-inside-paragraph
+                            width: 73.90625%
+                            font-size: clamp(11.5px,1.1979166666666667vw,46px)

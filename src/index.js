@@ -9,6 +9,7 @@ import Inside from "./pages/Inside";
 import Directory from "./pages/Directory";
 import DomainName from "./pages/DomainName";
 import Blog from "./pages/Blog";
+import BlogInside from "./pages/BlogInside";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +23,7 @@ root.render(
           <Route path="/directory" element={<Directory />}></Route>
           <Route path="/domain-name" element={<DomainName />}></Route>
           <Route path="/blog" element={<Blog />}></Route>
+          <Route path="/blog-inside" element={<BlogInside />}></Route>
         </Routes>
       </BrowserRouter>
     </Suspense>

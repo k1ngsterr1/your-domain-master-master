@@ -64,17 +64,35 @@
   display: flex;
   align-items: center;
 }
+* body .footer .container-footer .social-icons .icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 * body .footer .container-footer .social-icons .icon-link .icon {
-  margin-top: clamp(16px, 8.2051282051vw, 64px) !important;
+  margin-top: clamp(16px, 8.2051282051vw, 64px);
   font-size: clamp(17.5px, 8.1775700935vw, 70px) !important;
-  color: #fefefe !important;
+  color: #fefefe;
 }
 * body .footer .container-footer .social-icons .icon-link .twitter, * body .footer .container-footer .social-icons .icon-link .linkedin {
-  margin-left: clamp(16px, 8.2051282051vw, 64px) !important;
+  margin-left: clamp(16px, 8.2051282051vw, 64px);
 }
 
 @media screen and (min-width: 482px) {
+  * body .footer {
+    height: auto;
+  }
+  * body .footer .separator {
+    display: none;
+  }
+  * body .footer .your-domain {
+    margin-top: 0px;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    margin-top: clamp(16px, 1.6666666667vw, 64px);
+  }
   * body .footer .your-domain .footer-paragraph {
+    margin-top: clamp(16px, 1.6666666667vw, 64px);
+    margin-bottom: clamp(16px, 1.6666666667vw, 64px);
     font-size: clamp(9.5px, 0.8482142857vw, 38px);
   }
   * body .container-footer {
@@ -115,11 +133,23 @@
   * body .container-footer .footer-navigation-desktop .social-icons {
     margin-top: clamp(16px, 1.6666666667vw, 64px);
   }
+  * body .container-footer .footer-navigation-desktop .social-icons .icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   * body .container-footer .footer-navigation-desktop .social-icons .icon-link .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     color: #fefefe !important;
     font-size: clamp(20px, 1.7857142857vw, 80px) !important;
   }
-  * body .container-footer .footer-navigation-desktop .social-icons .icon-link .twitter, * body .container-footer .footer-navigation-desktop .social-icons .icon-link .telegram {
-    margin-right: clamp(16px, 1.6666666667vw, 64px);
+  * body .container-footer .footer-navigation-desktop .social-icons .icon-link .twitter {
+    margin-left: clamp(8px, 4.1025641026vw, 32px);
+  }
+  * body .container-footer .footer-navigation-desktop .social-icons .icon-link .linkedin {
+    margin-left: clamp(8px, 4.1025641026vw, 32px);
   }
 }/*# sourceMappingURL=footer.css.map */

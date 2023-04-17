@@ -73,10 +73,10 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
                     height: clamp(17.5px,8.177570093457945vw,70px)
 
                 .footer-navigation-desktop
-                    display: none 
+                    display: none
 
                 .footer-navigation
-                    display: flex 
+                    display: flex
                     flex-direction: column
                     margin-top: $m32
 
@@ -100,14 +100,17 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
                     align-items: center
 
                     .icon-link
+                        display: flex
+                        align-items: center
+                        justify-content: center
 
                         .icon
-                            margin-top: $m32 !important
+                            margin-top: $m32
                             font-size: clamp(17.5px,8.177570093457945vw,70px) !important
-                            color: $white !important
+                            color: $white
 
                         .twitter, .linkedin
-                            margin-left: $m32 !important
+                            margin-left: $m32
 
 @media screen  and (min-width: 482px)
 
@@ -115,14 +118,21 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
         body
 
             .footer
-                
+                height: auto
 
                 .separator
+                    display: none
 
                 .your-domain
+                    margin-top: 0px
+                    border-top: 2px solid rgba(255, 255, 255, 0.2)
+                    margin-top: $deskm32
 
                     .footer-paragraph
+                        margin-top: $deskm32
+                        margin-bottom: $deskm32
                         font-size: clamp(9.5px,0.8482142857142857vw,38px)
+
             .container-footer
                 width: 86.45833333333333% !important
                 height: auto !important
@@ -148,6 +158,7 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
                     margin-top: clamp(5px,0.5208333333333334vw,20px) !important
 
                     .a-link, .link
+
                         font-size: clamp(11px,1.1458333333333333vw,44px)!important
                         margin-top: 0px !important
                         color: white
@@ -162,10 +173,20 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
                         margin-top: $deskm32
 
                         .icon-link
+                            display: flex
+                            align-items: center
+                            justify-content: center
 
                             .icon
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                cursor: pointer
                                 color: $white !important
                                 font-size: clamp(20px,1.7857142857142858vw,80px) !important
-                            
-                            .twitter, .telegram
-                                margin-right: $deskm32
+
+                            .twitter
+                                margin-left: $m16
+
+                            .linkedin
+                                margin-left: $m16

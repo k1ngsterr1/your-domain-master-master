@@ -57,8 +57,8 @@ const AboutPage = () => {
             ></Tag>
           </div>
         </div>
-        <img className="phone-image" src={[iphone]}></img>
       </div>
+      <img className="phone-image" src={[iphone]}></img>
     </div>
   );
 };

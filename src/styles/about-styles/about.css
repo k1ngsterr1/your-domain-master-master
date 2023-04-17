@@ -39,7 +39,7 @@
   text-align: center;
   margin-top: clamp(8px, 4.1025641026vw, 32px);
 }
-* body .a-page .container .phone-image {
+* body .a-page .phone-image {
   display: none;
 }
 
@@ -57,8 +57,9 @@
     flex-direction: row;
   }
   * body .a-page .container .content {
+    width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-top: clamp(89.5px, 9.3229166667vw, 358px);
   }
   * body .a-page .container .content .zero-two-c, * body .a-page .container .content .zero-three-c, * body .a-page .container .content .zero-four-c {
@@ -92,14 +93,17 @@
     text-align: left;
   }
   * body .a-page .container .content .zero-one-c .a-container .a-paragraph, * body .a-page .container .content .zero-two-c .a-container .a-paragraph, * body .a-page .container .content .zero-three-c .a-container .a-paragraph, * body .a-page .container .content .zero-four-c .a-container .a-paragraph {
-    width: clamp(185px, 86.4485981308vw, 740px);
+    width: clamp(368.5px, 38.3854166667vw, 1474px);
     font-size: clamp(12px, 1.25vw, 48px);
     text-align: left;
     margin-top: clamp(8px, 4.1025641026vw, 32px);
   }
-  * body .a-page .container .phone-image {
+  * body .a-page .phone-image {
     width: clamp(132px, 26.7708333333vw, 528px);
     height: clamp(447px, 46.5625vw, 1788px);
+    left: clamp(649px, 67.6041666667vw, 2596px);
+    top: clamp(614.5px, 64.0104166667vw, 2458px);
+    position: absolute;
     display: flex;
   }
 }/*# sourceMappingURL=about.css.map */

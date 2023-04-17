@@ -24,6 +24,12 @@
   width: clamp(123.5px, 57.7102803738vw, 494px);
   height: clamp(23.5px, 10.9813084112vw, 94px);
   margin-top: clamp(16px, 8.2051282051vw, 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #1D1D1D;
+  background-color: #fefefe;
   margin-bottom: clamp(16px, 8.2051282051vw, 64px);
 }
 
@@ -56,6 +62,7 @@
     transition: 0.3s all;
     margin-top: clamp(32px, 3.3333333333vw, 128px);
     margin-bottom: clamp(32px, 3.3333333333vw, 128px);
+    text-decoration: none;
   }
   * body .g-page .container .user-button:hover {
     background-color: #eaeaea;
