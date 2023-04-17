@@ -38,7 +38,7 @@
   background: #007EBD;
 }
 * body .bm-cross-button {
-  left: clamp(125px, 58.4112149533vw, 500px);
+  left: clamp(135px, 63.0841121495vw, 540px);
 }
 * body .bm-menu-wrap {
   position: absolute;
