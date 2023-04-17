@@ -21,7 +21,9 @@ const MainPage = () => {
             a luctus. In aliquam montes at ac est lectus praesent. Gravida
             tellus ultricies nunc semper habitant.
           </p>
-          <button className="blue-button">Начать пользоваться</button>
+          <a className="blue-button" href="https://t.me/your_domain_bot">
+            Начать пользоваться
+          </a>
         </main>
       </div>
       <img className="phone-image" src={mockup}></img>
