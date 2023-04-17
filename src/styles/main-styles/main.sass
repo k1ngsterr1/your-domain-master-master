@@ -59,22 +59,29 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
                         margin-top: $m32
 
                     .blue-button
+                        width: clamp(123.5px,63.333333333333336vw,494px)
+                        height: clamp(23.5px,12.051282051282051vw,94px)
                         color: $white
                         background-color: $main_blue
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        text-decoration: none
                         margin-top: $m32
+                        transition: 0.3s all
                         &:hover
                             background-color: #007EBD
 
             .phone-image
-                width: clamp(195px,100vw,780px)
-                height: clamp(360px,184.6153846153846vw,1440px)
+                width: clamp(179px,83.64485981308411vw,716px)
+                height: clamp(327px,152.80373831775702vw,1308px)
                 margin-left: clamp(14.5px,7.004830917874396vw,58px)
                 margin-top: clamp(37px,17.8743961352657vw,148px)
 
             .desktop-image
                 display: none
 
-@media screen  and (min-width: 482px)
+@media screen  and (min-width: 482px )
 
     *
         body
@@ -85,9 +92,10 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
 
                 .container
                     width: 86.45833333333333%
-                    height: 100vh
+                    height: auto
                     margin: auto
                     margin-top: $deskm64
+                    margin-bottom: clamp(125px,13.020833333333334vw,500px)
                     display: flex
                     flex-direction: column
 
@@ -97,7 +105,7 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
                         margin-top: clamp(89.5px,9.322916666666666vw,358px)
 
                         .heading
-                            width: clamp(383.5px,39.947916666666664vw,1534px) !important
+                            width: clamp(383.5px,39.947916666666664vw,1534px)
                             font-family: 'Montserrat'
                             font-style: normal
                             font-weight: 800
@@ -112,14 +120,11 @@ $deskm16: clamp(8px,0.8333333333333334vw,32px)
                             margin-top: $deskm32
 
                         .blue-button
-                            font-size: clamp(11px,1.1458333333333333vw,44px)
                             width: clamp(215.5px,22.447916666666668vw,862px)
+                            height: clamp(32px,3.3333333333333335vw,128px)
+                            font-size: clamp(11px,1.1458333333333333vw,44px)
                             height: $deskm64
                             color: $white
-                            display: flex
-                            align-items: center
-                            justify-content: center
-                            text-decoration: none
                             background-color: $main_blue
                             margin-top: $deskm64
                             &:hover
